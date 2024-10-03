@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liva Park Kurtköy</title>
+
+
+
+
+    <!--BOOTSTRAPlink-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!--AVESOMElink-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ <!--BOOTS ICONS-->
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!--FAVICON-->
+
+    <link rel="icon" type="image/x-icon" href="/favi/favi.jpg">
+
+    <!--CSSlink-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        .d-none {
+            display: none;
+        }
+
+        .invalid-feedback {
+            display: none;
+        }
+
+        .btn.disabled {
+            pointer-events: none;
+            opacity: 0.65;
+        }
+    </style>
+
+</head>
+
+<body class="d-flex flex-column">
+
+    <main class="flex flex-shrink-0">
+
+        <div class="container bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5 bg-dark">
+                    <a class="navbar-brand" href="#">LİVA PARK KURTKÖY</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                            <li class="nav-item">
+                            <li class="nav-item"></li>
+                            <a class="nav-link" href="/pricing.html">Pricing</a>
+                            </li>
+                            </li>
+                            <a class="nav-link" href="/faq.html">FAQ</a>
+                            </li>
+
+                            <li class="nav-item dropdown ms-auto">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Plans
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    HAS GRUBU
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <!--Page Content-->
+
+        <section class="py-5">
+            <div class="container px-5">
+                <!-- Contact form-->
+                <div class="bg-light rounded-4 py-5 px-4 px-md-5 mb-5">
+                    <div class="text-center mb-5">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-envelope"></i></div>
+                        <h1 class="fw-bolder">Get in touch</h1>
+                        <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                            <form action="" method="post" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control is-invalid" id="name" type="text"
+                                        placeholder="Enter your name..." data-sb-validations="required"
+                                        data-sb-can-submit="no">
+                                    <label for="name">Full name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
+                                    </div>
+                                </div>
+
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control is-invalid" id="email" type="email"
+                                        placeholder="name@example.com" data-sb-validations="required,email"
+                                        data-sb-can-submit="no">
+                                    <label for="email">Email address</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is
+                                        required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.
+                                    </div>
+                                </div>
+
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                        data-sb-validations="required" data-sb-can-submit="no">
+                                    <label for="phone">Phone number</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
+                                        required.</div>
+                                </div>
+
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" type="text"
+                                        placeholder="Enter your message here..." style="height: 10rem"
+                                        data-sb-validations="required" data-sb-can-submit="no"></textarea>
+                                    <label for="message">Message</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is
+                                        required.</div>
+                                </div>
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Form submission successful!</div>
+                                        To activate this form, sign up at
+                                        <br>
+                                        <a
+                                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    </div>
+                                </div>
+
+
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+
+
+                                <div class="d-none" id="submitErrorMessage">
+                                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                                </div>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                        type="submit">Submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--COLUMNS-->
+                <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                    <div class="col">
+                        <div class="feature bg-gradient text-white rounded-3 mb-3"><i
+                                class="bg-primary p-3 fs-5 rounded bi bi-chat-dots"></i></div>
+                        <div class="h5 mb-2">Bizden biriyle sohbet edin.</div>
+                        <p class="text-muted mb-0">Chat live with one of our support specialists.</p>
+                    </div>
+                    <div class="col">
+                        <div class="feature bg-gradient text-white rounded-3 mb-3"><i
+                                class="bg-primary p-3 fs-5 rounded bi bi-people"></i></div>
+                        <div class="h5">Topluluğa sorun</div>
+                        <p class="text-muted mb-0">Explore our community forums and communicate with other users.</p>
+                    </div>
+                    <div class="col">
+                        <div class="feature
+                         bg-gradient text-white rounded-3 mb-3"><i
+                                class="bg-primary p-3 fs-5 rounded bi bi-question-circle"></i></div>
+                        <div class="h5">Destek Merkezi</div>
+                        <p class="text-muted mb-0">Sıkça sorulan sorular ve blog kısmımızı ziyaret edin.</p>
+                    </div>
+                    <div class="col">
+                        <div class="feature bg-gradient text-white rounded-3 mb-3"><i
+                                class=" bg-primary p-3 fs-5 rounded bi bi-telephone"></i></div>
+                        <div class="h5">Call us</div>
+                        <p class="text-muted mb-0">Bizi arayın. (555) 892-9403.</p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <!--FOOTER-->
+
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright © LİVAPARK 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
